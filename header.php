@@ -8,10 +8,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php wp_title( '|', true, 'right' ); ?><?= bloginfo('title') ?></title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <script src="<?= assets_dir() ?>/js/vendor/modernizr-2.6.2.min.js"></script>
 
