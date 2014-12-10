@@ -18,3 +18,16 @@
     -moz-box-shadow: @arguments;
     box-shadow: @arguments;
 }
+
+.opacity(@opacity) {
+    @ieopacity: @opacity * 100;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{ieopacity})";
+    /* IE 5-7 */
+    filter: ~"alpha(opacity=@{ieopacity})";
+
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    -o-opacity: @opacity;
+    opacity: @opacity;
+}
