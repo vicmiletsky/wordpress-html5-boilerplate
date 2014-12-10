@@ -1,0 +1,39 @@
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.row {
+    &:before, &:after {
+        content: ' ';
+        display: table;
+        height: 0px;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.row {
+    *zoom: 1;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ta-center {
+    text-align: center;
+}
