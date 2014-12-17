@@ -10,7 +10,7 @@
     <title><?php wp_title( '|', true, 'right' ); ?><?= bloginfo('title') ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="<?= assets_dir() ?>/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?= assets_dir('js/vendor/modernizr-2.8.3.min.js') ?>"></script>
 
     <?php wp_head(); ?>
 
