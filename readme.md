@@ -2,7 +2,7 @@
 Simple base for creating Wordpress themes, based on HTML5 BOILERPLATE 4.3.0 (http://html5boilerplate.com/)
 
 ##Usage
-1. Copy these files to wp-content/themes/your-theme
+1. Copy these files to wp-content/themes/your-theme (and remove this readme, you don't need it)
 2. Install & activate wp-less (https://github.com/oncletom/wp-less)
 3. ...
 4. Profit, start implementing your functionality
