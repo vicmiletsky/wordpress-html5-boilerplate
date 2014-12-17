@@ -5,7 +5,7 @@
  * @param string $path
  * @return string
  */
-function assets_dir($path = '')
+function assets_uri($path = '')
 {
     if($path) {
         $path =  '/' . trim($path, '/');
