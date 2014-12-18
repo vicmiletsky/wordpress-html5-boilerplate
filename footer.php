@@ -1,6 +1,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="<?= assets_uri('js/vendor/jquery-1.11.1.min.js') ?>"><\/script>')</script>
-    <script src="<?= assets_uri('js/main.js') ?>"></script>
+
+    <?php wp_footer(); ?>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -11,8 +12,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
-
-    <?php wp_footer(); ?>
 
 </body>
 </html>
