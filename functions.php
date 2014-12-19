@@ -1,16 +1,18 @@
 <?php
 
-// Load all stuff from ./functions dir
+// Load stuff from ./functions dir in proper order
 
-require_once __DIR__ . '/functions/utils.php';
-require_once __DIR__ . '/functions/enqueue.php';
-require_once __DIR__ . '/functions/actions.php';
+$functions_files = array(
+    'utils.php', // Utils go first
+    'enqueue.php',
+    'actions.php',
+    // Add yours
+);
 
-/*$files = glob(__DIR__ . '/functions/*.php');
-if($files) {
-    foreach($files as $file) {
-        if(is_file($file)) {
-            require_once $file;
+if($functions_files) {
+    foreach($functions_files as $file) {
+        if(is_file(__DIR__ . '/functions/' . $file)) {
+            require_once __DIR__ . '/functions/' . $file;
         }
     }
-}*/
+}
