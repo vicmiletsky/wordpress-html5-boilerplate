@@ -22,4 +22,10 @@ if(!is_admin()) {
 
     // And load it
     wp_enqueue_script( 'main_js', assets_uri('js/main.js'), $main_js_deps, null, true );
+
+    // Some app data which may be useful in js
+    wp_localize_script( 'main_js', 'AppConfig', array(
+        'siteUrl' => site_url(),
+        'ajaxUrl' => admin_url('admin-ajax.php')
+    ));
 }
