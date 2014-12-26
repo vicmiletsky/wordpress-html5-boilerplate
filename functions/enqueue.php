@@ -5,7 +5,7 @@
 if(!is_admin()) {
 
     // Main style
-    wp_enqueue_style( 'style_less', assets_uri('less/style.less') );
+    wp_enqueue_style( 'style-less', assets_uri('less/style.less') );
 
     // Libraries
     // jQuery is loaded in the footer.php from CDN before wp_footer()
@@ -21,10 +21,10 @@ if(!is_admin()) {
     $main_js_deps = array();
 
     // And load it
-    wp_enqueue_script( 'main_js', assets_uri('js/main.js'), $main_js_deps, null, true );
+    wp_enqueue_script( 'main-js', assets_uri('js/main.js'), $main_js_deps, null, true );
 
     // Some app data which may be useful in js
-    wp_localize_script( 'main_js', 'AppConfig', array(
+    wp_localize_script( 'main-js', 'AppConfig', array(
         'siteUrl' => site_url(),
         'ajaxUrl' => admin_url('admin-ajax.php')
     ));
