@@ -16,7 +16,8 @@ Uses LESS (http://lesscss.org/) as CSS pre-processor and relies on wp-less plugi
 1. `assets/less/style.less` - the main theme style, includes all css components and modules via @import. 
 Made so to serve all styles in a single minified file. This file is enqueued in `functions/enqueue.php` and then handled by wp-less.
 2. `assets/less/components` - put here your styles and then import in style.less, or use existing structure
-3. `assets/js` - your javascript goes here
-4. `functions/` - everything from this folder is reqired_once in functions.php, made so to break functions into smaller files
-5. `style.css` - here you put your theme details (http://codex.wordpress.org/Theme_Development#Theme_Stylesheet)
-6. Enqueue your styles and scripts in `functions/enqueue.php`
+3. `assets/js` - your custom javascript goes here
+4. `assets/vendor` - put external js libs here
+5. `functions/` - everything from this folder is reqired_once in functions.php, made so to break functions into smaller files
+6. `style.css` - here you put your theme details (http://codex.wordpress.org/Theme_Development#Theme_Stylesheet)
+7. Enqueue your styles and scripts in `functions/enqueue.php`
