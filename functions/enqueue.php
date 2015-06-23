@@ -10,7 +10,7 @@ if(!is_admin()) {
     // Libraries
     // jQuery is loaded in the footer.php from CDN before wp_footer()
 
-    wp_enqueue_script( 'modernizr', assets_uri('js/vendor/modernizr-2.8.3.min.js'), null, null, false );
+    wp_enqueue_script( 'modernizr', assets_uri('vendor/modernizr-2.8.3.min.js'), null, null, false );
 
     // Example:
     // wp_enqueue_script( 'bootstrap', assets_uri('js/vendor/bootstrap.min.js'), null, null, true);
