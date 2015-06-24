@@ -1,5 +1,5 @@
 ## Overview
-Simple base for creating Wordpress themes, based on HTML5 BOILERPLATE 4.3.0 (http://html5boilerplate.com/)  
+Simple base for creating Wordpress themes, based on HTML5 BOILERPLATE 5.2.0 (http://html5boilerplate.com/)  
 Uses LESS (http://lesscss.org/) as CSS pre-processor and relies on wp-less plugin (https://github.com/oncletom/wp-less)
 
 ## Deps
